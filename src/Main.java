@@ -31,6 +31,8 @@ public class Main {
             summ = summ + j;
         }
         System.out.println(summ);
+        System.out.println();
+
 
     }
 
@@ -50,17 +52,34 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за день составила " +min+ " рублей.");
         System.out.println("Максимальная сумма трат за день составила " +max+ " рублей.");
+        System.out.println();
     }
 
     public static void task3() {
         System.out.println("Задача 3");
         // Пишем код для задачи 3
+        int [] arr = generateRandomArray();
+        float average = 0;
+        int numbers = 0;
+        int summ = 0;
+
+        for (int j : arr) {
+            summ = summ + j;
+            numbers++;
+        }
+        average = (float) summ / numbers;
+        System.out.println("Средняя сумма трат за месяц составила " +average+ " рублей.");
+        System.out.println();
 
     }
 
     public static void task4() {
         System.out.println("Задача 4");
         // Пишем код для задачи 4
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+
+
+
 
     }
 
