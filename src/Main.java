@@ -6,10 +6,7 @@ public class Main {
         task2();
         task3();
         task4();
-        task5();
-        task6();
-        task7();
-        task8();
+
     }
 
     public static int[] generateRandomArray() {
@@ -30,7 +27,7 @@ public class Main {
         for (int j : arr) {
             summ = summ + j;
         }
-        System.out.println(summ);
+        System.out.println("Сумма трат за месяц составила " +summ+ " рублей.");
         System.out.println();
 
 
@@ -44,9 +41,9 @@ public class Main {
         int min = 200_001;
 
         for (final int current : arr) {
-            if (max < current) {
+            if (max <= current) {
                 max = current;
-            } else if (min > current) {
+            } else if (min >= current) {
                 min = current;
             }
         }
@@ -77,33 +74,11 @@ public class Main {
         System.out.println("Задача 4");
         // Пишем код для задачи 4
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-
-
-
-
-    }
-
-    public static void task5 () {
-        System.out.println("Задача 5");
-        // Пишем код для задачи 5
-
-    }
-
-    public static void task6() {
-        System.out.println("Задача 6");
-        // Пишем код для задачи 6
-
-    }
-
-    public static void task7() {
-        System.out.println("Задача 7");
-        // Пишем код для задачи 7
-
-    }
-    public static void task8 () {
-        System.out.println("Задача 8");
-        // Пишем код для задачи 8
-
+        for (int j = reverseFullName.length - 1; j >= 0;  j--) {
+            System.out.print(reverseFullName[j]);
+        }
+        System.out.println();
+        System.out.println();
     }
 
 }
